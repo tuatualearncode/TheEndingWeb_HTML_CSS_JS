@@ -1,0 +1,154 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* bule & green */
+
+.blue-img{
+    position: absolute;
+    left : 0;
+    bottom : 0;
+    width: 44.4%;
+    height: 57.4%; 
+}
+.orange-img{
+    position: absolute;
+    top : 0; 
+    right : 0;
+    height: 57.8%;
+    width: 45%;
+}
+.circle-img{
+    position: absolute;
+    bottom: 11.12%;
+    right : 14%;
+
+}
+
+/* container */
+
+#container{
+    position: relative;
+    background-color: white;
+    width: 80%;
+    height: 68%;
+    border-radius : 25px;
+    border : none;
+    display : flex;
+    justify-content: space-between;
+    box-shadow: 
+    3px 3px 3px rgba(0, 0, 0, 0.1), /* Đổ bóng cho góc dưới bên phải */
+    -3px 3px 3px rgba(0, 0, 0, 0.1), /* Đổ bóng cho góc dưới bên trái */
+    -3px -3px 3px rgba(0, 0, 0, 0.1), /* Đổ bóng cho góc trên bên trái */
+    3px -3px 3px rgba(0, 0, 0, 0.1); /* Đổ bóng cho góc trên bên phải */
+}
+
+#left{
+    width: 50%;
+}
+#right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* login form */
+#login-form{
+    width: 50%;
+    height: 60%;
+    box-sizing: border-box;
+ /*    background-color: #00a6da; */
+    display: flex;
+    flex-direction: column;
+}
+
+ /* ul */
+ .login-from-header{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    height: 10%;
+}
+ul.login-from-header li.login {
+    text-align: center;
+    width: 50%;
+    border-bottom: 2px solid #11698e; /* Màu xanh của border bottom */
+}
+ul.login-from-header li.register{
+    text-align: center;
+    width: 50%;
+}
+
+
+#login-form-input{
+    height: 70%;
+}
+/* login-email */
+#login-form-input .email{
+    display: block;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+#login-form-input .password{
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  /*   margin-bottom: 10px;
+    margin-top : 25px; */
+}
+
+#email-input{
+    width: 100%;
+    height: 20%;
+    border : 0.5px solid #ccc;
+    padding-left: 10px;
+}
+#password-input{
+    width: 100%;
+    height: 20%;
+    border : 0.5px solid #ccc;
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+
+/* checkbox */
+.checkbox-re{
+    display: flex;
+}
+.checkbox-re input[type="checkbox"] {
+    margin-right: 2%; /* Khoảng cách giữa checkbox và văn bản */
+    cursor: pointer;
+    background-color: #00a6da;
+}
+
+/* login-button */
+#login-form .button-login{
+    width: 100%;
+    margin-top: 10%;
+    border-radius: 30px;
+    height: 30px;
+    border: none;
+    background-color:#00a6da;
+    color: white;
+    /* cursor: pointer; */
+}
+

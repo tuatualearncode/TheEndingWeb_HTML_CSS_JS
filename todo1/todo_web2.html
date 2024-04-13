@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do 2</title>
+    <link rel="icon" href="../image/s-group-logo.png" type="image/x-icon"/>
+    <script src="https://kit.fontawesome.com/d9709a4397.js" crossorigin="anonymous"></script>
+    <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./todo_web2.css">
+</head>
+<body>
+
+<div id="main">
+    <!-- header -->
+    <div id="header">
+        <img class="header-img" src="../image/Frame 101373.png" alt="fail">
+        <div class="space"></div>
+        <div id="newtask">
+            <span class="newtask-plus">+</span>
+            <span class="newtask">New Task</span>
+        </div>
+    </div>
+
+   <!--  body -->
+   <div id="body">
+   <!-- <cột todo> -->
+        <div id="col">
+            <div class="col-header">
+                <h2>Todo</h2>
+                <span class="num todo-num">1</span>
+            </div>
+            <div class="col-line"></div>
+
+            <!--  all nội dung toto -->
+            <div class="col-css" id="todo">
+                <!--  1 việc làm -->
+                <div class="todo-item">  
+                    <div class="item-row1">
+                            <div class="item-row1-col1">
+                                <a href="#" class="caption">Hihi</a>  <!-- // nội dung cần get -->
+                                <h2 class="title">hehe</h2>  <!--  nội dung cần get -->
+                                <div class="line"></div>
+                            </div>
+                            <div class="item-row1-col2">
+                                <i class="edit fa-regular fa-pen-to-square"></i>
+                                <i class="delete fa-solid fa-trash"></i>
+                               
+                                
+                            </div>
+                    </div>
+                    <div class="item-row2">
+                            <p class="todo-content">nội dung việc làm</p> <!--  nội dung cần get -->
+                            <div class="todo-time">
+                                <i class="todo-clock fa-regular fa-clock"></i>
+                                <span class="class-time">April 6,2024</span> <!-- cần cho đúng time thêm việc -->
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- <cột Doing> -->
+        <div id="col">
+            <div class="col-header color-doing">
+                <h2>Doing</h2>
+                <p class="num doing-num color-doing">0</p>
+            </div>
+            <div class="col-line color-doing"></div>
+
+            <!--  all nội dung toto -->
+            <div class="todo-css" id="doing">
+                <!--  1 việc làm -->
+               <!-- <div class="todo-item">  
+                    <div class="item-row1">
+                            <div class="item-row1-col1">
+                                <a href="#" class="caption"></a>  
+                                <h2 class="title"></h2>
+                                <div class="line"></div>
+                            </div>
+                            <div class="item-row1-col2">
+                                <i class="edit"></i>
+                                <i class="delete"></i>
+                            </div>
+                    </div>
+
+                    <div class="item-row2">
+                            <p class="todo-content"></p>
+                            <div class="todo-time">
+                                <i class="time-icon"></i>
+                                <span class="class-time"></span> 
+                            </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+    <!-- cột complete -->
+        <div id="col">
+            <div class="col-header color-complete">
+                <h2>Completed</h2>
+                <p class="num completed-num color-complete">0</p>
+            </div>
+            <div class="col-line color-complete"></div>
+
+            <!--  all nội dung toto -->
+            <div class="todo-css" id="completed">
+                <!--  1 việc làm -->
+                <!-- <div class="todo-item">  
+                    <div class="item-row1">
+                            <div class="item-row1-col1">
+                                <a href="#" class="caption"></a>
+                                <h2 class="title"></h2> 
+                                <div class="line"></div>
+                            </div>
+                            <div class="item-row1-col2">
+                                <i class="edit"></i>
+                                <i class="delete"></i>
+                            </div>
+                    </div>
+
+                    <div class="item-row2">
+                            <p class="todo-content"></p> 
+                            <div class="todo-time">
+                                <i class="time-icon"></i>
+                                <span class="class-time"></span> 
+                            </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+    <!-- cột blocked -->
+        <div id="col">
+            <div class="col-header color-block">
+                <h2>Blocked</h2>
+                <p class="num block-num color-block">0</p>
+            </div>
+            <div class="col-line color-block"></div>
+
+            <!--  all nội dung toto -->
+            <div class="todo-css" id="block">
+                <!--  1 việc làm -->
+                <!-- <div class="todo-item">  
+                    <div class="item-row1">
+                            <div class="item-row1-col1">
+                                <a href="#" class="caption"></a> 
+                                <h2 class="title"></h2>  
+                                <div class="line"></div>
+                            </div>
+                            <div class="item-row1-col2">
+                                <i class="edit"></i>
+                                <i class="delete"></i>
+                            </div>
+                    </div>
+
+                    <div class="item-row2">
+                            <p class="todo-content"></p> 
+                            <div class="todo-time">
+                                <i class="time-icon"></i>
+                                <span class="class-time"></span>
+                            </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+   </div>
+ <!--   end body -->
+</div>
+
+
+<!-- MODAL -NEWTASK -->
+
+<div id="modal">
+    <div id="modal-newtask">
+       <div class="modal-close">
+            <i class="fa-solid fa-xmark"></i>
+       </div>
+        <div class="modal-header">
+            <h3>Ask New Task</h3>
+        </div>
+       <!--  lấy nội dung này -->
+        <form id="modal-body">
+            <input type="text" class="modal-a-title content-css" placeholder="Category.Ete.Marketing...">
+            <input type="text" class="modal-body-title content-css" placeholder="Tilte">
+            <input type="text" class="modal-body-content content-css" placeholder="Enter content in here...">
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<!-- MODAL - EDIT TASK-->
+
+<div id="modal-edit">
+    <div id="edit-newtask">
+       <div class="edit-close">
+            <i class="fa-solid fa-xmark"></i>
+       </div>
+        <div class="modal-header">
+            <h3>Edit Task</h3>
+        </div>
+       <!--  lấy nội dung này -->
+        <form id="edit-body">
+            <input type="text" class="edit-a-title content-css" placeholder="Category.Ete.Marketing...">
+            <input type="text" class="edit-body-title content-css" placeholder="Tilte">
+            <input type="text" class="edit-body-content content-css" placeholder="Enter content in here...">
+            
+            <span class="checkbox-css"><input type="checkbox" id="box-todo ">Todo</span>
+            <span class="checkbox-css"><input type="checkbox" id="box-doing">Doing</span>
+            <span class="checkbox-css"><input type="checkbox" id="box-completed">Completed</span>
+            <span class="checkbox-css"><input type="checkbox" id="box-block">Blocked</span>
+            <button type="submit" class="edit-save">Save</button>
+        </form>
+    </div>
+</div>
+
+
+<script src="./todo_web2.js"></script>
+</body>
+</html>

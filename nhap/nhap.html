@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+</head>
+<body>
+
+<h2>Login</h2>
+<form id="loginForm">
+  <label for="login">Login :</label><br>
+  <input type="text" id="login" name="login"><br>
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password"><br><br>
+  <button type="submit">Login</button>
+</form>
+
+<script>
+  document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    var login = document.getElementById("login").value; // lấy giá trị của cái input email
+    var password = document.getElementById("password").value;  //lấy giá trị của cái input password
+
+    // Dummy API request
+    var xhr = new XMLHttpRequest(); 
+    xhr.open("POST", "https://recruitment-api.pyt1.stg.jmr.pl/login", true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+    xhr.onreadystatechange = function () {
+        if (xhr.responseText === "Hello 😉! How are you?" && xhr.status === "ok") {
+            var response = JSON.parse(xhr.responseText);
+            if (response.success) {
+                // Redirect to success page
+                window.location.replace(nhap2.html);
+
+            } else {
+                alert("Đăng nhập không thành công. Vui lòng kiểm tra lại tên đăng nhập và mật khẩu.");
+            }
+        }
+    };
+
+    var data = JSON.stringify({ login: login, password: password });
+    xhr.send(data);
+  });
+</script>
+
+</body>
+</html>
